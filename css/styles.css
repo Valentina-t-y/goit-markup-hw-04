@@ -153,6 +153,12 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   flex-shrink: 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero/people-office.jpg");
+  background-size: cover;
 }
 
 .main-title {
@@ -306,9 +312,11 @@ body {
   column-gap: 24px;
   row-gap: 48px;
 }
+
 .portfolio-list-item {
   width: 360px;
 }
+
 .portfolio-list-fullname {
   color: #2e2f42;
   font-size: 20px;
@@ -325,11 +333,42 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .porflio-products {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+
+.overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  display: block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 40px 32px;
+  overflow: auto;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
+
+.portfolio-list-item:hover .overlay-text {
+  transform: translateY(0%);
+}
+
 /*========== /PORTFOLIO STYLES =========*/
 
 /*=========== FOOTER STULES ===========*/
