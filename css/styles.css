@@ -225,13 +225,6 @@ body {
   padding: 120px 0;
 }
 
-.benefits-container {
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-
 .benefits-list {
   display: flex;
   gap: 24px;
@@ -241,6 +234,10 @@ body {
   width: calc((100% - 72px) / 4);
 }
 .benefits-icon-wrapper {
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
