@@ -18,8 +18,6 @@ ol {
 }
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .list {
@@ -110,28 +108,15 @@ body {
 .menu {
   display: flex;
   gap: 40px;
-  position: relative;
 }
 
 .menu-link {
-  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
-  display: block;
-  position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-link-after::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
 }
 
 .menu-link:hover,
@@ -224,18 +209,15 @@ body {
 .benefits-list-item {
   width: calc((100% - 72px) / 4);
 }
-
 .benefits-icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 112px;
-  border: 1px solid rgba(142, 143, 153, 1);
-  border-radius: 4px;
-  background-color: rgba(244, 244, 253, 1);
-  width: 264px;
-  padding: 24px;
-  margin-bottom: 8px;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 22px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .benefits-list-title {
@@ -310,46 +292,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
 .team-name-position {
   padding: 32px 0;
-  border-radius: 0px 0px 4px 4px;
-}
-
-.social-list {
-  display: flex;
-  justify-content: center;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-top: 8px;
-  gap: 24px;
-  align-items: center;
-}
-
-.social-list-link {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  position: relative;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  align-items: center;
-  justify-content: center;
-}
-
-.social-list-icon {
-  stroke: #f4f4fd;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  fill: #f4f4fd;
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  background-color: #31d0aa;
 }
 /*========= /TEAM STYLES ==========*/
 
@@ -448,15 +392,6 @@ body {
   flex-shrink: 0;
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.logo-p {
-  margin-right: 120px;
-}
-
 .logo-span-footer {
   color: #f4f4fd;
   font-family: Raleway, sans-serif;
@@ -487,39 +422,5 @@ body {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 16px;
-}
-
-.footer-social-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 16px;
-}
-
-.footer-social-list {
-  display: flex;
-  gap: 16px;
-}
-
-.footer-social-list-item {
-  width: 40px;
-  height: 40px;
-}
-
-.footer-social-list-link {
-  background-color: #4d5ae5;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social-list-icon {
-  fill: #f4f4fd;
 }
 /*=========== /FOOTER STULES ===========*/
