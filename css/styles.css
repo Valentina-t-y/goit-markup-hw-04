@@ -233,7 +233,6 @@ body {
 .benefits-list-item {
   width: calc((100% - 72px) / 4);
 }
-
 .benefits-icon-wrapper {
   height: 112px;
   background-color: #f4f4fd;
@@ -242,7 +241,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 62px;
+  width: 112px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
