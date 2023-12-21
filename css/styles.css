@@ -225,6 +225,13 @@ body {
   padding: 120px 0;
 }
 
+.container {
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
 .benefits-list {
   display: flex;
   gap: 24px;
